@@ -16,7 +16,7 @@ body {
     height: 100vh;
 
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(500px, 1fr) 1fr;
     grid-template-rows: 1fr 7fr;
 }
 
@@ -31,8 +31,7 @@ header {
     display: flex;
     gap: 7em;
     align-items: center;
-
-    padding: 40px;
+    justify-content: space-evenly;
 }
 
 nav {
@@ -40,14 +39,10 @@ nav {
 }
 
 #container {
-    display: grid;
-    grid-template-columns: minmax(500px, 1fr) 1fr;
-    grid-template-rows: 1fr;
+    grid-column: 1;
 
     margin-bottom: 100px;
-}
 
-#textDiv {
     border: blue;
 
     display: flex;
@@ -58,12 +53,13 @@ nav {
     padding: 6vw;
 }
 
-#textDiv > h1 {
+
+#container > h1 {
     font-size: 5vw;
     font-family: "Great Vibes", cursive;
     font-weight: 100;
 }
 
-#textDiv > p {
+#container > p {
     font-size: 1vw;
 }
