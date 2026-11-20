@@ -29,3 +29,9 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+#textDiv {
+    height: 100%;
+    width: 100%;
+    border: solid blue;
+}
