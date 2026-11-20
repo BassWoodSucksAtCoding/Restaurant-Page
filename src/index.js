@@ -10,3 +10,15 @@ containerDiv.appendChild(title);
 const subcontent = document.createElement("p");
 subcontent.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a varius elit. Nam magna turpis, suscipit eget tellus eget, porta bibendum dolor. Nullam venenatis ultricies sapien, non convallis odio laoreet hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ";
 containerDiv.appendChild(subcontent);
+
+const navList = document.querySelectorAll("nav");
+navList.forEach((navElement, index) => {
+
+    navElement.addEventListener('mouseenter' , event => {
+        event.target.style.fontWeight = 1000;
+    })
+
+    navElement.addEventListener('mouseleave' , event => {
+        event.target.style.fontWeight = 400;
+    })
+});
