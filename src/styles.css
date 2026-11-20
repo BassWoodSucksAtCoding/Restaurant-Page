@@ -5,6 +5,11 @@ body {
     min-height: 100vh; */
 
     background-color: black;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 7fr;
 }
 
 * {
@@ -12,13 +17,12 @@ body {
 }
 
 header {
-    width: 100%;
     height: 5em;
-
     border: solid red;
 
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 nav {
@@ -28,10 +32,15 @@ nav {
 #container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    margin-bottom: 100px;
 }
 
 #textDiv {
-    height: 100%;
-    width: 100%;
     border: solid blue;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
