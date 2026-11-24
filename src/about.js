@@ -14,19 +14,11 @@ export default function createAboutTab() {
     contactDiv.classList.add("contactDiv")
     containerDiv.appendChild(contactDiv);
 
-    const title = document.createElement("h2");
-    title.textContent = "Contact us";
-    contactDiv.appendChild(title);
-
-    const buttonDiv = document.createElement('div');
-    buttonDiv.classList.add("buttonDiv")
-    contactDiv.appendChild(buttonDiv);
-
     const repoButton = document.createElement('button');
     repoButton.textContent = "REPOSITORY";
-    buttonDiv.appendChild(repoButton);
+    contactDiv.appendChild(repoButton);
 
     const discordButton = document.createElement('button');
     discordButton.textContent = "DISCORD";
-    buttonDiv.appendChild(discordButton);
+    contactDiv.appendChild(discordButton);
 }

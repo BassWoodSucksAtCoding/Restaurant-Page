@@ -1,5 +1,5 @@
 :root {
-    --secondary-color: #a3822c;
+    --secondary-color: #ffffff;
 }
 
 
@@ -17,7 +17,7 @@
 
 .solway-regular {
   font-family: "Solway", serif;
-  font-weight: 400;
+  font-weight: 100;
   font-style: normal;
 }
 
@@ -98,26 +98,26 @@ h2 {
 }
 
 .contactDiv {
-    padding-top: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    padding-top: 20px;
 
-.buttonDiv {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
-    justify-content: space-around;
 
     margin-top: 10px;
     font-size: 1vw;
+    width: 100%;
 }
 
+
 button {
-    border: solid 3px var(--secondary-color);
+    border: solid 3.5px var(--secondary-color);
     color: var(--secondary-color);
     background-color: transparent;
 
     width: 10em;
     height: 3em;
+
 }
