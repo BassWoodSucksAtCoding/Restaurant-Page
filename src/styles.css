@@ -1,3 +1,7 @@
+:root {
+    --secondary-color: #a3822c;
+}
+
 
 .great-vibes-regular {
   font-family: "Great Vibes", cursive;
@@ -84,9 +88,9 @@ p {
 }
 
 h2 {
-    color: #a3822c;
+    color: var(--secondary-color);
     font-family: "Solway", serif;
-    font-size: 1vw;
+    font-size: 1.6vw;
     font-weight: 100;
     text-align: left;
 
@@ -95,5 +99,25 @@ h2 {
 
 .contactDiv {
     padding-top: 60px;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonDiv {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+
+    margin-top: 10px;
+    font-size: 1vw;
+}
+
+button {
+    border: solid 3px var(--secondary-color);
+    color: var(--secondary-color);
+    background-color: transparent;
+
+    width: 10em;
+    height: 3em;
 }
