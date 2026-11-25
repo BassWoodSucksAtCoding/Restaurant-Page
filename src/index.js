@@ -3,6 +3,7 @@ import "./reset.css";
 
 import createHomeTab from "./home.js";
 import createAboutTab from "./about.js"
+import createMenuTab from "./menu.js";
 
 createHomeTab();
 
@@ -27,6 +28,8 @@ navList.forEach((navElement, index) => {
             createHomeTab();
         } else if (navElement.id === "about") {
             createAboutTab();
+        } else {
+            createMenuTab();
         }
     })
 });
