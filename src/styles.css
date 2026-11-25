@@ -68,7 +68,7 @@ nav {
     align-items: center;
     justify-content: center;
 
-    padding: 6vw;
+    padding: 5vw;
 }
 
 
@@ -140,6 +140,9 @@ button:hover {
     width: 400px;
     height: 200px;
     object-fit: cover;
+
+    border-radius: 15px;
+    outline: 6px rgb(48, 48, 48) solid;
 }
 
 .hoverimg:hover {
